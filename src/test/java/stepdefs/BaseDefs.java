@@ -1,0 +1,20 @@
+package stepdefs;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import steps.BaseSteps;
+
+/**
+ * Created by student on 05.11.2018.
+ */
+public class BaseDefs {
+    @Before
+    public void start(){
+        BaseSteps.startUp();
+    }
+
+    @After
+    public void end(){
+        BaseSteps.tearDown();
+    }
+}
